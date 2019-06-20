@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="./linkers/omr.js"></script>
+  </head>
+  <body>
+  <div id="frame">
+    <div id="title">
+      <img src="./images/omr.ico" alt="">
+      <p>Optimal Mark Recognition</p>
+    </div>
+    <div id="frame-btns">
+        <a id="min-btn">&#9866;</a>
+        <a id="max-btn">&#9744;</a>
+        <a id="close-btn">&#10006;</a>
+    </div>
+  </div>
+  <div class="wrapper">
+  <div id="content">
+    <div class="csv-file">
+      <div class="csv-file-block">
+          <img src="" alt="" id="csv-file">
+      </div>
+        <button id="browse-btn" onclick="get_csv_path('./images/csv.png')">Browse CSV file</button>
+    </div>
+
+    <div class="image-file">
+        <div class="answer-file-block">
+            <img src="" alt="" id="answer-image">
+        </div>
+        <button id="browse-btn" onclick="get_image_path()">Browse answer sheet</button>
+    </div>
+     <!--
+    <div class="about">
+      <img src="./omr_bg.png" alt="">
+      <div class="content">
+        Optical mark recognition (also called optical mark reading and OMR) is the process of capturing human-marked data from document forms such as surveys and tests. They are used to read questionnaires, multiple choice examination paper in the form of lines or shaded areas.
+      </div>
+    </div>-->
+  </div>
+  <button id="score-btn" onclick="get_score()">Get Score</button> 
+  <div class="result">
+    <h2 id="your_result"></h2>
+    <img id="result_img"  src="" alt="">
+  </div>
+  <!-- You can also require other files to run in this process -->
+</div>
+  </body>
+</html>

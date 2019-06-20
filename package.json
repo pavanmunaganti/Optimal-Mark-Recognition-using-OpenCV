@@ -1,0 +1,19 @@
+{
+  "name": "OMR",
+  "version": "1.0.0",
+  "description": "Optimal Mark Recognition using openCV and python",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . OMR --overwrite --platform=win32 --arch=ia32 --icon=gui/images/omr.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"OMR\""
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "python-shell": "^1.0.7"
+  }
+}
