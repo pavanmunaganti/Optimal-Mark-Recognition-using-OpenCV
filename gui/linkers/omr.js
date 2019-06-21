@@ -32,8 +32,9 @@ function get_score() {
     if(err) throw err;
     document.getElementById("your_result").innerHTML = result[0];
     document.getElementById("result_img").setAttribute("src","../"+result[1]);
+    document.getElementById("csv-file").setAttribute("src","");
+    document.getElementById("answer-image").setAttribute("src","");
   });
   
-  document.getElementById("csv-file").setAttribute("src","");
-  document.getElementById("answer-image").setAttribute("src","");
+  
 }

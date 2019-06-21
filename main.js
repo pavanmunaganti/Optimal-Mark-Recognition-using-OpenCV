@@ -19,7 +19,7 @@ function createWindow () {
     width: 1000,
     height: 1000,
     frame: false,
-    icon: 'omr.ico',
+    icon: './gui/images/omr.ico',
     title: 'Optimal Mark Recognition',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
@@ -35,7 +35,6 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
-
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows

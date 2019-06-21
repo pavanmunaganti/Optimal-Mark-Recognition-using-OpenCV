@@ -1,3 +1,4 @@
+//Event listeners for custom frame's buttons
 (function () {
       
     const remote = require('electron').remote; 

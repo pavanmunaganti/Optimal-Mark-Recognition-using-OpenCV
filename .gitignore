@@ -48,4 +48,4 @@ Thumbs.db
 
 #release builds
 
-/release-builds
+/release-builds/electron-tutorial-app-win32-ia32
